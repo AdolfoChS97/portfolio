@@ -1,0 +1,9 @@
+html, body { 
+    margin: 0;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #fcfbfa !important;
+}

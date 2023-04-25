@@ -1,0 +1,33 @@
+.home-section {
+    height: 70vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-title {
+    letter-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    margin-bottom:0.5%;    
+}
+
+.text-sub {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.text-primary {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1.5%;
+    color: #7b7a7a;
+}

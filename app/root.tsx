@@ -7,6 +7,18 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import Root from "./assets/styles/Root.css";
+import NavBar from "./components/shared/nav-bar/nav-bar.css";
+import Home from "./components/home/home.css";
+
+export function links() {
+  return [
+    { rel: "stylesheet", href: NavBar },
+    { rel: "stylesheet", href: Home },
+    { rel: "stylesheet", href: Root },
+  ];
+}
+
 export default function App() {
   return (
     <html lang="en">
@@ -16,7 +28,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body style={{ minHeight: '100%', backgroundColor: '#252e41', margin: '0px' }}>
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
