@@ -1,21 +1,21 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { GreetingsComponent } from './components/greetings/greetings.component';
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterOutlet } from "@angular/router";
+import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
+import { GreetingsComponent } from "./components/greetings/greetings.component";
+import { SkillsComponent } from "./components/skills/skills.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [
-    CommonModule, 
+    CommonModule,
     RouterOutlet,
     NavBarComponent,
-    GreetingsComponent
+    GreetingsComponent,
+    SkillsComponent,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --gray: #80868Aff;
+    --gray: #80868aff;
     --black: #000000ff;
-    --paynes-gray: #4E6774ff;
-    --rich-black: #000E15ff;
-    --rich-black-2: #001521ff;    
+    --paynes-gray: #4e6774ff;
+    --rich-black: #000e15ff;
+    --rich-black-2: #001521ff;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--rich-black-2);
@@ -17,8 +17,7 @@ body {
     width: 100%;
 }
 
-
-/* 
+/*
  * Navbar Start
  */
 
@@ -35,7 +34,6 @@ nav > div {
 
 .nav-bar {
     background-color: var(--rich-black);
-    padding: 0.5rem;
     justify-content: flex-start;
 }
 
@@ -43,9 +41,11 @@ nav > div {
     width: 2.2rem;
     justify-content: flex-start;
     margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.nav-bar-item{
+.nav-bar-item {
     text-decoration: none;
     color: #ffffff;
     justify-content: right;
@@ -55,7 +55,7 @@ nav > div {
 .nav-bar-item > a {
     text-decoration: none;
     color: #ffffff;
-    margin: 0 1.2rem;
+    margin: 0 1.8rem;
 }
 
 div.nav-bar-item > a:hover {
@@ -63,10 +63,9 @@ div.nav-bar-item > a:hover {
     transition: 0.2s;
 }
 
-/* 
+/*
  * Navbar End
  */
-
 
 /*
 * Greetings Start
@@ -77,13 +76,58 @@ section.greetings {
     flex-direction: row;
     height: 30.5rem !important;
     background:
-    radial-gradient(circle farthest-side at 0% 50%,var(--rich-black-2) 23.5%,rgba(240,166,17,0) 0)21px 30px,
-    radial-gradient(circle farthest-side at 0% 50%,var(--rich-black) 24%,rgba(240,166,17,0) 0)19px 30px,
-    linear-gradient(var(--rich-black-2) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--rich-black-2) 0)0 0,
-    linear-gradient(150deg,var(--rich-black-2) 24%,var(--rich-black) 0,var(--rich-black) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--rich-black) 0,var(--rich-black) 76%,var(--rich-black-2) 0)0 0,
-    linear-gradient(30deg,var(--rich-black-2) 24%,var(--rich-black) 0,var(--rich-black) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--rich-black) 0,var(--rich-black) 76%,var(--rich-black-2) 0)0 0,
-    linear-gradient(90deg,var(--rich-black) 2%,var(--rich-black-2) 0,var(--rich-black-2) 98%,var(--rich-black) 0%)0 0 var(--rich-black-2);
-    background-size:40px 60px;
+        radial-gradient(
+                circle farthest-side at 0% 50%,
+                var(--rich-black-2) 23.5%,
+                rgba(240, 166, 17, 0) 0
+            )
+            21px 30px,
+        radial-gradient(
+                circle farthest-side at 0% 50%,
+                var(--rich-black) 24%,
+                rgba(240, 166, 17, 0) 0
+            )
+            19px 30px,
+        linear-gradient(
+                var(--rich-black-2) 14%,
+                rgba(240, 166, 17, 0) 0,
+                rgba(240, 166, 17, 0) 85%,
+                var(--rich-black-2) 0
+            )
+            0 0,
+        linear-gradient(
+                150deg,
+                var(--rich-black-2) 24%,
+                var(--rich-black) 0,
+                var(--rich-black) 26%,
+                rgba(240, 166, 17, 0) 0,
+                rgba(240, 166, 17, 0) 74%,
+                var(--rich-black) 0,
+                var(--rich-black) 76%,
+                var(--rich-black-2) 0
+            )
+            0 0,
+        linear-gradient(
+                30deg,
+                var(--rich-black-2) 24%,
+                var(--rich-black) 0,
+                var(--rich-black) 26%,
+                rgba(240, 166, 17, 0) 0,
+                rgba(240, 166, 17, 0) 74%,
+                var(--rich-black) 0,
+                var(--rich-black) 76%,
+                var(--rich-black-2) 0
+            )
+            0 0,
+        linear-gradient(
+                90deg,
+                var(--rich-black) 2%,
+                var(--rich-black-2) 0,
+                var(--rich-black-2) 98%,
+                var(--rich-black) 0%
+            )
+            0 0 var(--rich-black-2);
+    background-size: 40px 60px;
 }
 
 .greetings > div {
@@ -96,12 +140,12 @@ section.greetings {
     padding: 1rem;
 }
 
-.about > div { 
+.about > div {
     font-size: 2.3rem;
     font-weight: 550;
 }
 
-.about > button { 
+.about > button {
     font-size: 1.1rem;
     font-weight: 550;
     color: #ffffff;
@@ -111,7 +155,6 @@ section.greetings {
     border-radius: 0.5rem;
     margin-top: 1rem;
     transition: 0.2s;
-
 }
 
 .about > p {
@@ -120,7 +163,6 @@ section.greetings {
     color: var(--gray);
     margin-top: 1rem;
     text-align: justify;
-
 }
 
 .greetings > div.hero {
@@ -131,12 +173,40 @@ section.greetings {
     width: 50%;
     height: 100%;
     padding: 1rem;
-
 }
 
 div.hero > img {
     width: 29rem;
 }
-/* 
+/*
  * Greetings End
  */
+
+/*
+* Skills Start
+*/
+
+section.skills {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--rich-black);
+}
+
+section.skills > div.hard, div.soft {
+    width: 50%;
+    padding: 0.5rem;
+    height: 30.5rem !important;
+}
+
+div.soft > p, div.hard > p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/*
+* Skills End
+*/
